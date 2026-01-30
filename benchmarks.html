@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>SAT Competition</title>
+<link rel="stylesheet" href="main.css" type="text/css">
+<link rel="icon" type="image/x-icon" href="doge2.ico">
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<style>a#benchmarks { color:var(--link-color-2); }</style>
+</head>
+
+<body>
+<div class="main">
+  <div class="navigation" w3-include-html="navigation.html"></div>
+  <div class="heading" w3-include-html="heading.html"></div>
+  <script>w3.includeHTML();</script> 
+
+  <div class="content">
+	<h2>Benchmarks</h2>
+
+	<h4>Benchmark Submission</h4>
+	<p>
+	We would like to invite and encourage submissions of benchmarks and benchmark generators for all the tracks of the competition.
+	</p>
+	<p>
+	Each Main Track participant (team) is required to submit 20 new benchmark instances (not seen in previous competitions). 
+	At least 10 of those benchmarks should neither be too easy (solvable by MiniSat in a minute) or too hard (unsolvable by the participants own solver within one hour).
+	</p>
+	A 1-2 page benchmark description document, using the <a href="http://www.ieee.org/conferences_events/conferences/publishing/templates.html">IEEE Proceedings style</a>,
+	must be submitted with each submitted benchmark family.
+	The benchmark descriptions will be made available similarly as the solver descriptions (see <a href="rules.html">general rules</a>).
+
+	<h4>Benchmark Format</h4>
+ 	The benchmark file can start with <i>comment lines</i>, i.e. lines beginning with the character <i>c</i>. 
+	After the comments, there is the line <i>p cnf nbvar nbclauses</i> that indicates that the instance is in CNF format, where <i>nbvar</i> is the exact number of variables appearing in the file, and <i>nbclauses</i> is the exact number of clauses contained in the file. 
+	Then the clauses follow. Each clause is a sequence of distinct non-null numbers between -nbvar and nbvar ending with 0 on the same line. 
+	A clause must not contain the opposite literals i and -i simultaneously. 
+	Positive numbers denote the corresponding variables. 
+	Negative numbers denote the negations of the corresponding variables.
+	
+	<!-- Benchmarks have to be formatted according to the
+	<a href="http://www.satcompetition.org/2011/format-benchmarks2011.html">SAT Competition 2011 Benchmark Submission Guidelines</a>. -->
+
+	<h4>Benchmark Selection</h4>
+	<p>
+	The benchmark problems will be selected randomly from the set of benchmarks submitted by the participants and by the organizers. 
+	</p>
+  </div>
+</div>
+</body>
+</html>
