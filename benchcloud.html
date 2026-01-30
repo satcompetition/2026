@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>SAT Competition</title>
+<link rel="stylesheet" href="main.css" type="text/css">
+<link rel="icon" type="image/x-icon" href="doge2.ico">
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<style>a#benchcloud { color:var(--link-color-2); }</style>
+</head>
+
+<body>
+<div class="main">
+  <div class="navigation" w3-include-html="navigation.html"></div>
+  <div class="heading" w3-include-html="heading.html"></div>
+  <script>w3.includeHTML();</script> 
+
+  <div class="content">
+	<h2>Submission Instructions</h2>
+	<p>
+	All sequential tracks will be run on the <a href="https://benchcloud.sosy-lab.org/">BenchCloud Instance of SoSy Lab in Munich</a> using compute nodes with an 8 cores Intel Xeon E3-1230 v5 @ 3.40 GHz CPU.
+	The solvers will be executed with a time limit of 5000 seconds and memory limit of 30GB.
+	</p>
+
+	<h4 id="testing">Testing and Requirements</h4>
+	<p>
+		The solver should be able to be built and run on a system that conforms to the specification in the <a href="https://gitlab.com/sosy-lab/benchmarking/competition-scripts/#computing-environment-on-competition-machines">Computing Environment on Competition Machines</a> section of the SoSy Lab Competition Scripts.
+		The top-level directory of your solver should contain two scripts:
+		<ul>
+			<li><b>build.sh</b>, for building the solver.<br />
+			<p>
+				The build script should take no parameters and should be tested and work on the provided Docker image.
+			</p>
+			</li>
+			<li><b>run.sh</b>, to run the solver.<br />
+			<p>
+				The run script should take two parameters: The first parameter is the path to the benchmark instance. The proof for UNSAT instances must be written to a file named <b>proof.out</b> and placed in the folder that your run script receives as the second parameter.
+			</p>
+			<p>
+				Note that the answer line ("s SATISFIABLE" and "s UNSATISFIABLE") and the solution in case of a satisfiable instance (lines starting with "v") must still go to stdout (not to "proof.out").
+			</p>
+			</li>
+		</ul>
+	</p>
+
+	<h4>Submission</h4>
+	<p>
+	The submission of the final version of a solver is via a private GitHub repository, which is to be made available to the organizers by the solver authors.
+	After the solver submission deadline we will ask all the participants to make their repositories public.
+	</p>
+
+	<h4>Emailing your System Description Document</h4>
+	<p>
+		After you have submitted the final version of your solver send an email to the organizers (organizers@satcompetition.org) containing your system description document (see <a href="rules.html">General Rules</a> for more information).
+	</p>
+  </div>
+</div>
+</body>
+</html>
