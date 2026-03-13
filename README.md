@@ -1,41 +1,45 @@
 # SAT Competition 2026: Call for Solvers and Benchmarks
 
-The 2026 SAT Competition is a competitive event for solvers of the Boolean Satisfiability (SAT) problem. It is organized as a satellite event to the 29th International Conference on Theory and Applications of Satisfiability Testing and stands in the tradition of the annual SAT Competitions and Races. The registration deadline is TBA, 2026 (23:59 GMT -12). More details will be available at the competition website https://satcompetition.github.io/2026/.
+SAT Competition 2026 is a competitive event for solvers of the Boolean Satisfiability (SAT) problem. It is organized as a satellite event of the 29th International Conference on Theory and Applications of Satisfiability Testing and continues the tradition of annual SAT Competitions and Races. The registration deadline is April 19, 2026 (23:59 GMT-12). More details are available on the competition website: <https://satcompetition.github.io/2026/>.
 
-The area of SAT solving has seen tremendous progress over the last years. Many problems in applications such as hardware and software verification that seemed to be completely out of reach a decade ago can now be handled routinely. Besides new algorithms and better heuristics, refined implementation techniques turned out to be vital for this success.
-To keep up the driving force in improving SAT solvers, we want to motivate developers to present their work to a broader audience and to compare it with that of others.
+SAT solving has seen tremendous progress in recent years. Many problems in hardware and software verification that were out of reach a decade ago can now be solved routinely. Alongside new algorithms and better heuristics, refined implementation techniques have been essential to this success.
 
-The 2026 SAT Competition will consist of the following tracks:
+To sustain this momentum, we invite solver developers to present their work to a broad audience and compare it with that of other teams.
 
-* Main Track (including the opportunity to choose from different proof checkers)
+SAT Competition 2026 will include the following tracks:
+
+* Main Track (including the option to choose among different proof checkers)
 
 * Parallel Track
 
-
 ## New This Year
 
-**New Infrastructure for the Main Track**
+### New Infrastructure for the Main Track
 
-The SAT Competition 2025 will be hosted on the BenchCloud instance of the SoSy Lab in Munich for the first time. This results in changes to the submission and resource limits.
-Details on the submission process will be provided on the competition website.
+For the first time, SAT Competition 2026 will run on KIT's NHR system HoreKa/Blue in Karlsruhe. Details of the submission process will be published on the competition website.
 
-<!-- **New Organization Team**
+### Machine-Generated Solvers Have a Separate Sub-Track
 
-We are happy to welcome Katalin Fazekas as a new member of the SAT Competition organization team.
-We are sad to see Matti Järvisalo and Martin Suda leave the organization team. We thank them for their great work during the past years. -->
+In the Main Track, solvers devised or tuned by machines will be excluded. A separate sub-track will be available for solvers that include machine-generated code or machine-based tuning. Details of this sub-track will be available on the competition website.
 
+### Benchmark Selection Script
+
+For the first time, we are publishing the benchmark selection script _before_ receiving benchmark instances. The script is available for download on the competition website, and we welcome comments. Feel free to review the script before the solver registration deadline.
+
+### System and Benchmark Descriptions Are Reviewed More Strictly
+
+We will review system and benchmark descriptions more carefully than in past competitions and reserve the right to reject submissions that do not meet a baseline quality standard. Specifically, your system description must report the original solver codebase and version, along with the number of lines edited or added by humans and the number of lines edited or added by artificial intelligence.
 
 ## Aspects to Highlight
 
-**Bring Your Own Benchmarks (BYOB)**
+### Bring Your Own Benchmarks (BYOB)
 
-Each team participating in the Main Track is required to submit 20 new benchmark instances that have not been seen in previous competitions, along with a description of the source of the instances and how they were generated. At least 10 of those benchmarks should neither be too easy (solvable by MiniSat in a minute) or too hard (unsolvable by the participants own solver within one hour).
+Each team participating in the Main Track must submit 20 new benchmark instances that have not appeared in previous competitions, together with a description of their source and generation process. At least 10 of these benchmarks should be of moderate difficulty: neither too easy (solvable by MiniSat within one minute) nor too hard (not solved by the participant's own solver within one hour).
 
-**PAR-2 Scoring Scheme**
+### PAR-2 Scoring Scheme
 
-The solvers will be ranked based on their penalized average runtime (PAR-2). The PAR-2 score of a solver is defined to be its average runtime over all instances, whereby unsolved instances contribute twice the time limit.
-
+Solvers will be ranked by penalized average runtime (PAR-2). A solver's PAR-2 score is its average runtime over all instances, where each unsolved instance contributes twice the time limit.
 
 Best regards,
 
-The SAT Competition organizers 
+The SAT Competition organizers
