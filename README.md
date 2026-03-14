@@ -10,6 +10,8 @@ SAT Competition 2026 will include the following tracks:
 
 * Main Track (including the option to choose among different proof checkers)
 
+* Experimental Track
+
 * Parallel Track
 
 ## New This Year
