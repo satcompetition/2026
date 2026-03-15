@@ -10,7 +10,9 @@ SAT Competition 2026 will include the following tracks:
 
 * Main Track (including the option to choose among different proof checkers)
 
-* Experimental Track
+* AI Track (AI-generated or AI-tuned solvers with proof checking)
+
+* Experimental Track (no proof checking)
 
 * Parallel Track
 
@@ -20,17 +22,20 @@ SAT Competition 2026 will include the following tracks:
 
 For the first time, SAT Competition 2026 will run on KIT's NHR system HoreKa/Blue in Karlsruhe. Details of the submission process will be published on the competition website.
 
-### Machine-Generated Solvers Have a Separate Sub-Track
+### AI-Generated and AI-Tuned Solvers Have a Separate Sub-Track
 
-In the Main Track, solvers devised or tuned by machines will be excluded. A separate sub-track will be available for solvers that include machine-generated code or machine-based tuning. Details of this sub-track will be available on the competition website.
+Solvers devised or tuned by AI are not eligible for the Main Track. Instead, there will be a seperate track for these solvers that will have the same requirements as Main Track, including proof checking and benchmark submission. 
 
 ### Benchmark Selection Script
 
 For the first time, we are publishing the benchmark selection script _before_ receiving benchmark instances. The script is available for download on the competition website, and we welcome comments. Feel free to review the script before the solver registration deadline.
 
-### System and Benchmark Descriptions Are Reviewed More Strictly
+### System and Benchmark Descriptions Are Reviewed More Strictly and Require AI Statement
 
-We will review system and benchmark descriptions more carefully than in past competitions and reserve the right to reject submissions that do not meet a baseline quality standard. Specifically, your system description must report the original solver codebase and version, along with the number of lines edited or added by humans and the number of lines edited or added by artificial intelligence.
+We will review system and benchmark descriptions more carefully than in past competitions and 
+reserve the right to reject submissions that do not meet a baseline quality standard.
+Specifically, your system description must report the original solver codebase and version,
+along with the number of lines edited or added by humans and the number of lines edited or added by artificial intelligence.
 
 ## Aspects to Highlight
 
