@@ -24,7 +24,7 @@ For the first time, SAT Competition 2026 will run on KIT's NHR system HoreKa/Blu
 
 ### AI-Generated and AI-Tuned Solvers Have a Separate Sub-Track
 
-Solvers devised or tuned by AI are not eligible for the Main Track. Instead, there will be a seperate track for these solvers that will have the same requirements as Main Track, including proof checking and benchmark submission. 
+Solvers devised or tuned by AI are not eligible for the Main Track. Instead, there will be a seperate track for these solvers that will have the same requirements as Main Track, including proof checking and benchmark submission.
 
 ### Benchmark Selection Script
 
@@ -32,8 +32,7 @@ For the first time, we are publishing the benchmark selection script _before_ re
 
 ### System and Benchmark Descriptions Are Reviewed More Strictly and Require AI Statement
 
-We will review system and benchmark descriptions more carefully than in past competitions and 
-reserve the right to reject submissions that do not meet a baseline quality standard.
+We will review system and benchmark descriptions more carefully than in past competitions and reserve the right to reject submissions that do not meet a baseline quality standard.
 Specifically, your system description must report the original solver codebase and version,
 along with the number of lines edited or added by humans and the number of lines edited or added by artificial intelligence.
 
