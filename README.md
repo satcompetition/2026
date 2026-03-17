@@ -10,8 +10,6 @@ SAT Competition 2026 will include the following tracks:
 
 * Main Track (including the option to choose among different proof checkers)
 
-* AI Track (AI-generated or AI-tuned solvers with proof checking)
-
 * Experimental Track (no proof checking)
 
 * Parallel Track
