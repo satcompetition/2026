@@ -14,6 +14,8 @@ SAT Competition 2026 will include the following tracks:
 
 * Parallel Track
 
+* Cloud Track
+
 ## New This Year
 
 ### New Infrastructure for the Main Track
