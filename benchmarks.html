@@ -35,17 +35,23 @@
  	The benchmark file can start with <i>comment lines</i>, i.e. lines beginning with the character <i>c</i>. 
 	After the comments, there is the line <i>p cnf nbvar nbclauses</i> that indicates that the instance is in CNF format, where <i>nbvar</i> is the exact number of variables appearing in the file, and <i>nbclauses</i> is the exact number of clauses contained in the file. 
 	Then the clauses follow. Each clause is a sequence of distinct non-null numbers between -nbvar and nbvar ending with 0 on the same line. 
-	A clause must not contain the opposite literals i and -i simultaneously. 
 	Positive numbers denote the corresponding variables. 
 	Negative numbers denote the negations of the corresponding variables.
+
+	<h4>Benchmark Sanitization</h4>
+	<p>
+	We run a sanitization process on the submitted benchmarks to create a clean, standardized set for post-competition use.
+	This process removes tautological clauses and duplicate literals within clauses.
+	However, solvers and checkers must be able to handle these cases, as they may appear in real-world applications.
+	We will test the solvers and disqualify any that fail to solve unsanitized benchmarks correctly.
+	</p>
 	
 	<!-- Benchmarks have to be formatted according to the
 	<a href="http://www.satcompetition.org/2011/format-benchmarks2011.html">SAT Competition 2011 Benchmark Submission Guidelines</a>. -->
 
 	<h4>Benchmark Selection</h4>
 	<p>
-		TBA.
-	<!-- The benchmark problems will be selected randomly from the set of benchmarks submitted by the participants and by the organizers.  -->
+	The <a href="downloads/benchmark-compilation-script.tar.xz">benchmark compilation script</a> is publicly available to ensure transparency.
 	</p>
   </div>
 </div>
