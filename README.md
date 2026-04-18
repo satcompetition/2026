@@ -10,11 +10,11 @@ SAT Competition 2026 will include the following tracks:
 
 * Main Track (including the option to choose among different proof checkers)
 
-* AI Track (AI-generated or AI-tuned solvers with proof checking)
-
 * Experimental Track (no proof checking)
 
 * Parallel Track
+
+* Cloud Track
 
 ## New This Year
 
@@ -24,7 +24,9 @@ For the first time, SAT Competition 2026 will run on KIT's NHR system HoreKa/Blu
 
 ### AI-Generated and AI-Tuned Solvers Have a Separate Sub-Track
 
-Solvers devised or tuned by AI are not eligible for the Main Track. Instead, there will be a seperate track for these solvers that will have the same requirements as Main Track, including proof checking and benchmark submission. 
+There will be separate subcategories for AI-generated and AI-tuned solvers in each of the Main, Experimental, Parallel, and Cloud tracks. 
+The same rules and limitations that apply to each track also apply to solvers flagged as AI-generated and/or AI-tuned.
+However, these solvers are not eligible for regular track prizes. An award will be given to the best AI-tuned and AI-generated solver in each track.
 
 ### Benchmark Selection Script
 
@@ -32,8 +34,7 @@ For the first time, we are publishing the benchmark selection script _before_ re
 
 ### System and Benchmark Descriptions Are Reviewed More Strictly and Require AI Statement
 
-We will review system and benchmark descriptions more carefully than in past competitions and 
-reserve the right to reject submissions that do not meet a baseline quality standard.
+We will review system and benchmark descriptions more carefully than in past competitions and reserve the right to reject submissions that do not meet a baseline quality standard.
 Specifically, your system description must report the original solver codebase and version,
 along with the number of lines edited or added by humans and the number of lines edited or added by artificial intelligence.
 
