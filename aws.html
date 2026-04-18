@@ -17,8 +17,41 @@
   <script>w3.includeHTML();</script> 
 
   <div class="content">
-	<h2>Parallel Track Submissions</h2>
+	<h2>Parallel and Cloud Track Submissions</h2>
 
+
+Please make sure to adhere to the <a href="rules.html">General Rules</a>.<BR><BR>
+
+The Parallel and Cloud tracks will be run on Amazon Web Services. The
+competition infrastructure has been rewritten for 2026. Instructions
+and the full package are available here:
+<a href="https://github.com/aws-samples/aws-batch-comp-infrastructure-sample"
+https://github.com/aws-samples/aws-batch-comp-infrastructure-sample</a>.
+
+The instance type codes are documented in the AWS documentation.
+
+The new infrastructure is designed to be simple. You submit only two
+files: a Dockerfile to build your solver, and a small Python shim
+(`solver_cmd.py`) to connect your solver’s inputs and outputs to the
+package. A single CLI script (`satcomp.py`) is the entrypoint for
+everything: building, local testing, deploying to AWS, running jobs,
+and collecting results.
+
+Key points:
+1. Local-first development. Build and test your solver in local Docker
+containers before testing with AWS.
+2. One tool for everything. `satcomp.py build`, `test-local`, `push`,
+`start-instances`, `submit`, `collect`, `teardown` — all from one
+script.
+3. Same package runs the competition. The package you use to prepare
+your solver is the same one used to run the competition.
+4. Lots of examples. The repository includes Dockerfiles and shims for
+multiple solvers from previous competitions, so you can get started
+quickly.
+5. Qualification testing. Built-in `test` command validates your
+solver against submission requirements before you submit.
+
+<!--
 <p>
 Please make sure to adhere to the <a href="rules.html">General Rules</a>.
 </p>
@@ -45,6 +78,8 @@ of the problem is indicated by the return code of the solver (10 for SAT, 20 for
 7. Various improvements and bug fixes in the scripts for building/running jobs to provide better observability 
 of the process.
 </p>
+-->
+
   </div>
 </div>
 </body>
