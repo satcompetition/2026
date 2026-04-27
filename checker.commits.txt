@@ -1,0 +1,7 @@
+VeriPB https://gitlab.com/MIAOresearch/software/VeriPB c648bac06be995b82bd218e248f005140fc8ce11
+CakePB https://gitlab.com/MIAOresearch/software/cakepb 300a4afe88d4b5d97753f78edfaac497d6810c91
+GRATgen/GRATchk https://bitbucket.org/isafol/isafol/src/master/GRAT/ a4822318b5cafdaf01add2a06bffacd0592a73d8
+DPRtrim https://github.com/marijnheule/dpr-trim 2dff40530dbc6ac78e52bfe917f872cb16780418
+CakeLPR https://github.com/tanyongkiam/cake_lpr a4323b203cc9ecd584ba7da9e3fff08135a09d5f
+DSRtrim https://github.com/ccodel/dsr-trim 8f857dd6cb34ccff8eb94e2f4ed6cf012d6c8f35
+Trestle https://github.com/FormalSAT/trestle 21e589d76f411d9ee3a70926c860e5c67285db7c
