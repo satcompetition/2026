@@ -32,6 +32,12 @@
 
 	<h3 id="news">News</h3>
 	<ul>
+		<li><b>2026-07-15</b>
+			We uploaded a <a href="downloads/benchmark-compilation-script/select26-deterministic.py">deterministic version</a> of the benchmark selection script.
+			The original script contained two sources of non-determinism:
+			iteration over unsorted unique values, and use of Python's built-in <code>hash()</code> which is randomized across runs.
+			The fixes are minimal and preserve the intent and logic of the original selection procedure entirely.
+		</li>
 		<li><b>2026-03-17</b>
 			The <a href="downloads/benchmark-compilation-script.tar.xz">benchmark compilation script</a> is now available.
 			For testing, <code>benchmarks2026.csv</code> includes last year's submissions.
