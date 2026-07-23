@@ -1,98 +1,120 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>SAT Competition</title>
-<link rel="stylesheet" href="main.css" type="text/css">
-<link rel="icon" type="image/x-icon" href="doge2.ico">
-<script src="https://www.w3schools.com/lib/w3.js"></script>
-<style>a#index { color:var(--link-color-2); }</style>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>SAT Competition</title>
+	<link rel="stylesheet" href="main.css" type="text/css">
+	<link rel="icon" type="image/x-icon" href="doge2.ico">
+	<script src="https://www.w3schools.com/lib/w3.js"></script>
+	<style>
+		a#index {
+			color: var(--link-color-2);
+		}
+	</style>
 </head>
 
 <body>
-<div class="main">
-  <div class="navigation" w3-include-html="navigation.html"></div>
-  <div class="heading" w3-include-html="heading.html"></div>
-  <script>w3.includeHTML();</script> 
-  
-  <div class="content">
-	SAT Competition 2026 is a competitive event for solvers of the Boolean Satisfiability (SAT) problem.
-	The competition is organized as a satellite event to the <a href="http://satisfiability.org/SAT26/">SAT Conference 2026</a>
-	and continues the series of the annual <a href="http://www.satcompetition.org">SAT Competitions and SAT-Races / Challenges</a>.
-	
-	<h3><a name="Objective">Objective</a></h3>
-	<p>
-	The area of SAT Solving has seen tremendous progress over the last years.
-	Many problems that seemed to be out of reach a decade ago can now be handled routinely.
-	Besides new algorithms and better heuristics, refined implementation techniques turned out to be vital for this success.
-	To keep up the driving force in improving SAT solvers, we want to motivate implementers to present their work to a broader audience 
-	and to compare it with that of others.
-	Researchers from both academia and industry are invited to submit their solvers and benchmarks.
-	</p>
+	<div class="main">
+		<div class="navigation" w3-include-html="navigation.html"></div>
+		<div class="heading" w3-include-html="heading.html"></div>
+		<script>w3.includeHTML();</script>
 
-	<h3 id="news">News</h3>
-	<ul>
-		<li><b>2026-07-23</b>
-			The <a href="downloads/satcomp26slides.pdf">slides</a> of the SAT Competition 2026 presentation and the <a href="downloads/scores.csv">detailed instance-wise results</a> now available for download.
-		</li>
-		<li><b>2026-07-15</b>
-			We uploaded a <a href="downloads/benchmark-compilation-script/select26-deterministic.py">deterministic version</a> of the benchmark selection script.
-			The original script contained two sources of non-determinism:
-			iteration over unsorted unique values, and use of Python's built-in <code>hash()</code> which is randomized across runs.
-			The fixes are minimal and preserve the intent and logic of the original selection procedure entirely.
-		</li>
-		<li><b>2026-03-17</b>
-			The <a href="downloads/benchmark-compilation-script.tar.xz">benchmark compilation script</a> is now available.
-			For testing, <code>benchmarks2026.csv</code> includes last year's submissions.
-			The script will be used to compile this year's benchmark set; the same file will be updated with the new submissions.
-		</li>
-		<li><b>2026-03-17</b>
-			The call for solvers, benchmarks, and proof checkers is sent out.
-		</li>
-		<li><b>2026-01-30</b>
-			The competition website is online.
-		</li>
-	</ul>
+		<div class="content">
+			SAT Competition 2026 is a competitive event for solvers of the Boolean Satisfiability (SAT) problem.
+			The competition is organized as a satellite event to the <a href="http://satisfiability.org/SAT26/">SAT
+				Conference 2026</a>
+			and continues the series of the annual <a href="http://www.satcompetition.org">SAT Competitions and
+				SAT-Races / Challenges</a>.
 
-	<h3><a name="Tracks">Tracks</a></h3>
-	<ul>
-		<li><a href="tracks.html#main">Main Track</a></li>
-		<li><a href="tracks.html#parallel">Parallel Track</a></li>
-		<li><a href="tracks.html#exptrack">Experimental Track</a></li>
-		<li><a href="tracks.html#aigen">AI Generated / AI-Tuned Sub-Tracks</a></li>
-		<li><a href="tracks.html#cloud">Cloud Track (?)</a></li>
-	</ul>
+			<h3><a name="Objective">Objective</a></h3>
+			<p>
+				The area of SAT Solving has seen tremendous progress over the last years.
+				Many problems that seemed to be out of reach a decade ago can now be handled routinely.
+				Besides new algorithms and better heuristics, refined implementation techniques turned out to be vital
+				for this success.
+				To keep up the driving force in improving SAT solvers, we want to motivate implementers to present their
+				work to a broader audience
+				and to compare it with that of others.
+				Researchers from both academia and industry are invited to submit their solvers and benchmarks.
+			</p>
 
-	<h3 id="dates">Important Dates</h3>
-	<p>We plan to run the competition according to the following schedule.</p>
-	<table class="borderless">
-	  <tr>
-		<td>Proof Checker Submission (with Documentation):</td>
-		<td class="date"><s>March 1st</s> March 20th</td>
-	  </tr>
-	  <tr>
-		<td>Solver Registration (with Benchmark Submissions):</td>
-		<td class="date">April 19th</td>
-	  </tr>
-	  <tr>
-		<td>Benchmark Submission (with Documentation):</td>
-		<td class="date">April 19th</td>
-	  </tr>
-	  <tr>
-		<td>Sequential Solver Submission:</td> 
-		<td class="date"><s>May 3rd</s> Mai 10th</td>
-	  </tr>
-	  <tr>
-		<td>Parallel/Cloud Solver Submission:</td> 
-		<td class="date"><s>May 3rd</s> Mai 17th</td>
-	  </tr>
-	  <tr>
-		<td>Solver Documentation Submission:</td>
-		<td class="date">May 17th</td>
-	  </tr>
-	  </tr>
-	</table>
-  </div>
-</div>
+			<h3 id="news">News</h3>
+			<ul>
+				<li><b>2026-07-23</b>
+					We updated the third-place prizes in the Main and Main UNSAT tracks on the slides to correct a mistake.
+					To adhere to the rule that each solver author can only receive one prize per track, we updated the winners accordingly.
+					The third-place prizes in these two tracks go to Yalun Cai and Qiang Xu for their solver, EDA-Kissat. Congratulations!
+				</li>
+				<li><b>2026-07-23</b>
+					The <a href="downloads/satcomp26slides.pdf">slides</a> of the SAT Competition 2026 presentation and
+					the <a href="downloads/scores.csv">detailed instance-wise results</a> now available for download.
+				</li>
+				<li><b>2026-07-15</b>
+					We uploaded a <a
+						href="downloads/benchmark-compilation-script/select26-deterministic.py">deterministic
+						version</a> of the benchmark selection script.
+					The original script contained two sources of non-determinism:
+					iteration over unsorted unique values, and use of Python's built-in <code>hash()</code> which is
+					randomized across runs.
+					The fixes are minimal and preserve the intent and logic of the original selection procedure
+					entirely.
+				</li>
+				<li><b>2026-03-17</b>
+					The <a href="downloads/benchmark-compilation-script.tar.xz">benchmark compilation script</a> is now
+					available.
+					For testing, <code>benchmarks2026.csv</code> includes last year's submissions.
+					The script will be used to compile this year's benchmark set; the same file will be updated with the
+					new submissions.
+				</li>
+				<li><b>2026-03-17</b>
+					The call for solvers, benchmarks, and proof checkers is sent out.
+				</li>
+				<li><b>2026-01-30</b>
+					The competition website is online.
+				</li>
+			</ul>
+
+			<h3><a name="Tracks">Tracks</a></h3>
+			<ul>
+				<li><a href="tracks.html#main">Main Track</a></li>
+				<li><a href="tracks.html#parallel">Parallel Track</a></li>
+				<li><a href="tracks.html#exptrack">Experimental Track</a></li>
+				<li><a href="tracks.html#aigen">AI Generated / AI-Tuned Sub-Tracks</a></li>
+				<li><a href="tracks.html#cloud">Cloud Track (?)</a></li>
+			</ul>
+
+			<h3 id="dates">Important Dates</h3>
+			<p>We plan to run the competition according to the following schedule.</p>
+			<table class="borderless">
+				<tr>
+					<td>Proof Checker Submission (with Documentation):</td>
+					<td class="date"><s>March 1st</s> March 20th</td>
+				</tr>
+				<tr>
+					<td>Solver Registration (with Benchmark Submissions):</td>
+					<td class="date">April 19th</td>
+				</tr>
+				<tr>
+					<td>Benchmark Submission (with Documentation):</td>
+					<td class="date">April 19th</td>
+				</tr>
+				<tr>
+					<td>Sequential Solver Submission:</td>
+					<td class="date"><s>May 3rd</s> Mai 10th</td>
+				</tr>
+				<tr>
+					<td>Parallel/Cloud Solver Submission:</td>
+					<td class="date"><s>May 3rd</s> Mai 17th</td>
+				</tr>
+				<tr>
+					<td>Solver Documentation Submission:</td>
+					<td class="date">May 17th</td>
+				</tr>
+				</tr>
+			</table>
+		</div>
+	</div>
 </body>
+
 </html>
