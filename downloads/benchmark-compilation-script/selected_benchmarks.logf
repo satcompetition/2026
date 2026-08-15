@@ -1,0 +1,213 @@
+
+New benchmark selection — by author / family:
+  author               family                                part available  selected
+  -------------------- ------------------------------------ ----- --------- ---------
+  zhenwei              xor-shifting                           yes       600        11
+  zhenwei              hard-cep                               yes         9         1
+  hieu                 cyclic-anti-bandwidth                   no       101        16
+  heule                allowable-seqence                       no        20        16
+  heule                boxfolding                              no        18        16
+  heule                ntil                                    no        16        16
+  liang                syndrome-decoding                      yes        23        12
+  anders               graph-coloring                         yes        20        12
+  green                linear-equations                       yes        20        12
+  oertel               chnl                                   yes        10         6
+  oertel               count                                  yes        10         6
+  reeves               graph-coloring                         yes        20        12
+  schreiber            school-timetabling                     yes        20        12
+  yalun                multiplier-circuit-miters              yes        20        12
+  zheng                exam-scheduling                        yes        20        12
+  gopalan              van-der-waerden                        yes        18        12
+  hangjiang            stable-semantics                       yes        12        12
+  ding                 argumentation                          yes        11        11
+  guo                  ecc-equivalence-checking               yes        10        10
+  biere                lights-out                             yes         7         7
+  xudong               datapath-equivalence-checking           no         6         6
+  shiv                 sudoku-php                              no         2         2
+  faraja               graph-coloring                         yes         1         1
+                       TOTAL                                            994       233
+
+Selected 233 benchmarks from new submissions
+shape: (3, 2)
+┌─────────┬───────┐
+│ result  ┆ count │
+│ ---     ┆ ---   │
+│ str     ┆ u32   │
+╞═════════╪═══════╡
+│ unknown ┆ 51    │
+│ sat     ┆ 98    │
+│ unsat   ┆ 84    │
+└─────────┴───────┘
+Selected 167 benchmarks from old ones
+shape: (3, 2)
+┌─────────┬───────┐
+│ result  ┆ count │
+│ ---     ┆ ---   │
+│ str     ┆ u32   │
+╞═════════╪═══════╡
+│ unknown ┆ 57    │
+│ sat     ┆ 48    │
+│ unsat   ┆ 62    │
+└─────────┴───────┘
+Selected 400 benchmarks in total
+shape: (3, 2)
+┌─────────┬───────┐
+│ result  ┆ count │
+│ ---     ┆ ---   │
+│ str     ┆ u32   │
+╞═════════╪═══════╡
+│ sat     ┆ 146   │
+│ unsat   ┆ 146   │
+│ unknown ┆ 108   │
+└─────────┴───────┘
+
+Final selection — by author / family:
+  author               family                                 count
+  -------------------- ------------------------------------ -------
+  heule                allowable-seqence                         16
+  heule                ntil                                      16
+  heule                boxfolding                                16
+  heule                matrix-multiplication                      2
+  heule                hgen                                       2
+  heule                quasigroup-completion                      1
+  heule                philips                                    1
+  heule                heule-nol                                  1
+  hieu                 cyclic-anti-bandwidth                     16
+  oertel               count                                      6
+  oertel               chnl                                       6
+  oertel               binary-pigeon-hole                         1
+  oertel               clique-formulas                            1
+  oertel               coloring                                   1
+  anders               graph-coloring                            12
+  anders               clique-coloring                            1
+  anders               ramsey-numbers                             1
+  biere                lights-out                                 7
+  biere                miter                                      2
+  biere                antibandwidth                              2
+  biere                pigeon-hole                                1
+  biere                linvrinv                                   1
+  green                linear-equations                          12
+  green                register-allocation                        1
+  reeves               graph-coloring                            12
+  reeves               scheduling                                 1
+  schreiber            school-timetabling                        12
+  schreiber            mechanical-master-key                      1
+  zheng                exam-scheduling                           12
+  zheng                set-covering                               1
+  zhenwei              xor-shifting                              11
+  zhenwei              equivalence-checking                       1
+  zhenwei              hard-cep                                   1
+  gopalan              van-der-waerden                           12
+  hangjiang            stable-semantics                          12
+  liang                syndrome-decoding                         12
+  yalun                multiplier-circuit-miters                 12
+  ding                 argumentation                             11
+  guo                  ecc-equivalence-checking                  10
+  newman               station-repacking                          6
+  xudong               datapath-equivalence-checking              6
+  riveros              sum-of-3-cubes                             2
+  riveros              01-integer-programming                     1
+  riveros              sat-x                                      1
+  riveros              fermat                                     1
+  wynn                 cardinality-constraints                    5
+  elffers              tseitin-formulas                           1
+  elffers              stone                                      1
+  elffers              pebbling                                   1
+  elffers              coloring                                   1
+  harder               cellular-automata                          4
+  manthey              rooks                                      1
+  manthey              gray_codes                                 1
+  manthey              at-least-two-sol                           1
+  manthey              software-verification                      1
+  niskanen             argumentation                              4
+  anbulagan            diagnosis                                  3
+  anton                subgraph-isomorphism                       3
+  chung                satcoin                                    3
+  fleury               risc-instruction-removal-subrv             1
+  fleury               grs-fp-comm                                1
+  fleury               risc-instruction-removal-golcrest          1
+  sabharwal            ordering-principle                         2
+  sabharwal            coloring                                   1
+  skvortsov            automata-synchronization                   2
+  skvortsov            battleship                                 1
+  soos                 cryptography                               3
+  aloul                prime-factoring                            1
+  aloul                fpga-routing                               1
+  chowdhury            profitable-robust-production               1
+  chowdhury            graceful-production                        1
+  froleyks             planning                                   2
+  gomes                quasigroup-completion                      2
+  jarvisalo            miter                                      1
+  jarvisalo            ensemble-computation                       1
+  kaiser               sliding-puzzle                             2
+  klieber              crafted-cec                                2
+  kullmann             waerden                                    2
+  lester               scheduling                                 1
+  lester               minimal-superpermutation                   1
+  li                   circuit-minimization                       2
+  manyem               independent-set                            2
+  mihal                oddball-weighing                           1
+  mihal                belpyramid-puzzle                          1
+  palacios             planning                                   2
+  qian                 belpyramid-puzzle                          2
+  savicky              tensors                                    2
+  shiv                 sudoku-php                                 2
+  sterten              hamiltonian                                2
+  surynek              planning                                   2
+  unknown              agile                                      1
+  unknown              misc-satex                                 1
+  xindi                miter                                      2
+  zaikin               cryptography                               2
+  aws                  software-verification                      1
+  bonet                bioinformatics                             1
+  bryant               minimum-disagreement-parity                1
+  chu-min-li           cryptography                               1
+  collatz              termination-analysis                       1
+  connamacher          generic-csp                                1
+  corblin              bioinformatics                             1
+  desgen               cryptography                               1
+  devriendt            coloring                                   1
+  djamegni             scheduling                                 1
+  ehlers               tree-decomposition                         1
+  faraja               graph-coloring                             1
+  gacek                cover                                      1
+  gao                  interval-matching                          1
+  guanfeng             hgen                                       1
+  hang                 argumentation                              1
+  heusser              cryptography                               1
+  huang                rbsat                                      1
+  jamali               relational-dependencies                    1
+  jianmin              md5-equivalence-checking                   1
+  karia                brent-equations                            1
+  kochemazov           miter                                      1
+  kukula               miter                                      1
+  kummling             scheduling                                 1
+  leberre              2d-strip-packing                           1
+  lynce                social-golfer                              1
+  manolios             hardware-verification                      1
+  maris                planning                                   1
+  marques-silva        hardware-verification                      1
+  mayer                scheduling                                 1
+  mayer-eichberger     social-golfer                              1
+  mosoi                mosoi-289                                  1
+  mugrauer             graph-isomorphism                          1
+  oostema              coloring                                   1
+  ostrowski            genurq                                     1
+  pakin                binary-tree-parity                         1
+  post                 cryptography-cbmc                          1
+  preiner              bitvector                                  1
+  purdom               purdom-instances                           1
+  ricci-tersenghi      glassy-gen                                 1
+  sambuss              equivalence-chain-principle                1
+  scheel               cryptography                               1
+  schidler             hypertree-decomposition                    1
+  shunyang             multiplier-circuits                        1
+  shuolinli            scheduling                                 1
+  strichman            scheduling                                 1
+  werner               software-bmc                               1
+  xinyan               circuit-equivalence-checking               1
+  xu                   unknown-cases                              1
+  yuhangqian           cryptography-simon                         1
+  zha                  prime-factoring                            1
+  zhou                 subgraph-isomorphism                       1
+                       TOTAL                                    400
