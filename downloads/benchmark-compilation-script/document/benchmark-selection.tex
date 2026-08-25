@@ -159,15 +159,15 @@ $\mathcal{S}_\text{old} \leftarrow \mathcal{S}_\text{sat} \cup \mathcal{S}_\text
 
 \subsection{Diversity and Balance}\label{sec:balance}
 
-The selection of new instances from the submitted pool is done by stratified random sampling, where we stratify by the author of the instance or by the instance family, limiting the instance number per \emph{participating} benchmark author to a maximum of 12 (Alg.~\ref{alg:select}, Line~\ref{alg:sample-author})f, and per instance family submitted by a \emph{non-participating} benchmark author to a maximum of 16 (Alg.~\ref{alg:select}, Line~\ref{alg:sample-family}f).
+The selection of new instances from the submitted pool is done by stratified random sampling, where we stratify by the author of the instance or by the instance family, limiting the instance number per \emph{participating} benchmark author to a maximum of 12 (Alg.~\ref{alg:select}, Line~\ref{alg:sample-author}f.), and per instance family submitted by a \emph{non-participating} benchmark author to a maximum of 16 (Alg.~\ref{alg:select}, Line~\ref{alg:sample-family}f.).
 This is supposed to ensure that the benchmark set contains a diverse set of instances from different authors and different families, and that no single author or family dominates the benchmark set.
 
 For the selection of old instances from the GBD pool, we use weights which are inversely proportional to the number of instances in the same family $W_\text{family}$ or the same author $W_\text{author}$.
 We use $W_\text{family} = 100 / N_\text{family}$ and $W_\text{author} = 100 / N_\text{author}$, where $N$ is the number of instances of the family or author, respectively.
-The overall sampling weight of an old instance is the sum of its three component weights, $W = W_\text{novelty} + W_\text{family} + W_\text{author}$, and instances are drawn without replacement with probability proportional to $W$ within each satisfiability class (Alg.~\ref{alg:select}, Line~\ref{alg:sample-old}f).
+The overall sampling weight of an old instance is the sum of its three component weights, $W = W_\text{novelty} + W_\text{family} + W_\text{author}$, and instances are drawn without replacement with probability proportional to $W$ within each satisfiability class (Alg.~\ref{alg:select}, Line~\ref{alg:sample-old}f.).
 
-For driving the overall set toward an even SAT/UNSAT balance, We use the satisfiability status determined in the preanalysis of the selected new instances, for calculating a budget limiting the number of satisfiable and unsatisfiable instances to be selected from the old instance pool (Alg.~\ref{alg:select}, Lines~\ref{alg:budget}f and~\ref{alg:sample-old}).
-As we target a total of 400 instances in the benchmark, the total old-instance budget is $B = 400 - N_\text{new}$, where $N_\text{new}$ is the number of newly submitted instances that were selected.
+For driving the overall set towards an even SAT/UNSAT balance, we use the satisfiability status determined in the preanalysis of the selected new instances, for calculating a budget limiting the number of satisfiable and unsatisfiable instances to be selected from the old instance pool (Alg.~\ref{alg:select}, Lines~\ref{alg:budget}f. and~\ref{alg:sample-old}f.).
+As we target a total of 400 instances in the benchmark set, the total old-instance budget is $B = 400 - N_\text{new}$, where $N_\text{new}$ is the number of newly submitted instances that were selected.
 Let $N_\text{sat}$ and $N_\text{unsat}$ denote the number of satisfiable and unsatisfiable instances among the selected new instances.
 We distribute $B$ over the three satisfiability classes so as to counterbalance any imbalance already present in the new instances:
 \begin{align*}
@@ -197,7 +197,7 @@ It is a more precise approximation of isomorphism than the previously used degre
 
 For the 2026 edition, 19 benchmark authors submitted a total of 1096 instances.
 Fifteen of these authors were competition participants submitting under the BYOB rule, while four contributed benchmarks only.
-After discarding instances that Minisat solves within one minute, 1028 remain, of which 994 are structurally distinct according to IsoHash2~\cite{isohash2}.
+After discarding instances that Minisat solves within one minute, 1028 instances remain, of which 994 are structurally distinct according to IsoHash2~\cite{isohash2}.
 
 Table~\ref{tab:submissions} lists, for each submitter, the problem domain and the number of instances at each stage of the pipeline: total of submitted instances (\emph{Sub.}), instances remaining after the Minisat filter (\emph{Ms1}), instances structurally unique after IsoHash2 deduplication (\emph{Iso.}), and the instances finally selected after stratified random sampling (\emph{Sel.}).
 
